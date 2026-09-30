@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gado Gado Roll - Sensasi Baru Makan Gado-Gado</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pastelGreen: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                        },
+                        pastelYellow: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                        },
+                        softCream: '#FFFDF5',
+                        brandDark: '#1E3A2B',
+                    },
+                    fontFamily: {
+                        sans: ['Quicksand', 'Poppins', 'sans-serif'],
+                        display: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FFFDF5;
+            color: #1E3A2B;
+        }
+        .blob-bg {
+            background-image: radial-gradient(#86efac 1px, transparent 1px), radial-gradient(#fde68a 1px, #FFFDF5 1px);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 20px;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-pastelYellow-300 relative overflow-x-hidden">
+
+    <!-- Background Decor -->
+    <div class="fixed inset-0 blob-bg -z-10"></div>
+    <div class="fixed -top-24 -left-24 w-96 h-96 bg-pastelYellow-200/50 rounded-full blur-3xl -z-10"></div>
+    <div class="fixed top-1/2 -right-24 w-96 h-96 bg-pastelGreen-200/50 rounded-full blur-3xl -z-10"></div>
+
+    <!-- Navigation / Header -->
+    <header class="w-full py-4 px-6 md:px-12 backdrop-blur-md bg-white/70 sticky top-0 z-50 border-b border-pastelGreen-100 shadow-sm">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-pastelGreen-200 flex items-center justify-center text-pastelGreen-700 shadow-inner">
+                    <i class="fa-solid font-bold text-xl fa-utensils"></i>
+                </div>
+                <span class="font-display font-extrabold text-xl md:text-2xl text-pastelGreen-700 tracking-tight">
+                    GadoGado<span class="text-amber-500">Roll</span>
+                </span>
+            </div>
+            
+            <a href="https://wa.me/qr/SARAAJEXIXJ3F1" target="_blank" rel="noopener noreferrer" 
+               class="hidden sm:inline-flex items-center gap-2 bg-pastelGreen-500 hover:bg-pastelGreen-600 text-white font-semibold px-4 py-2 rounded-full text-sm transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Pesan Sekarang</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="max-w-5xl mx-auto px-6 py-8 md:py-12 text-center">
+            <div class="inline-block bg-pastelYellow-100 border border-pastelYellow-300 text-amber-800 text-xs md:text-sm font-semibold px-4 py-1.5 rounded-full mb-4 shadow-sm animate-bounce">
+                🥗 Praktis, Sehat & Lezat Dalam Setiap Gulungan!
+            </div>
+            <h1 class="font-display text-3xl sm:text-4xl md:text-5xl font-extrabold text-brandDark mb-4 leading-tight">
+                Nikmati Kesegaran <span class="text-pastelGreen-600 underline decoration-pastelYellow-300 decoration-wavy">Gado-Gado</span><br class="hidden sm:inline"> Lebih Modern & Praktis
+            </h1>
+            <p class="text-gray-600 max-w-2xl mx-auto text-sm md:text-base mb-8">
+                Perpaduan sempurna sayuran segar pilihan, tahu, tempe, dan bumbu kacang gurih khas Nusantara yang dibalut rapi. Makan gado-gado kini gampang, tanpa ribet, di mana saja!
+            </p>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="max-w-4xl mx-auto px-6 pb-16">
+            <div class="bg-white rounded-3xl p-6 sm:p-8 md:p-10 shadow-xl shadow-pastelGreen-100/80 border border-pastelGreen-100 relative overflow-hidden transition-all duration-300 hover:shadow-2xl">
+                
+                <!-- Badge Favorite -->
+                <div class="absolute top-4 right-4 sm:top-6 sm:right-6 bg-pastelYellow-300 text-amber-900 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm flex items-center gap-1">
+                    <i class="fa-solid fa-star text-amber-600"></i>
+                    <span>Menu Andalan</span>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <!-- <a href="https://freeimage.host/"><img src="https://iili.io/na5CoFI.jpg" alt="na5CoFI.jpg" border="0" /></a> -->
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-pastelGreen-300 to-pastelYellow-200 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-300"></div>
+                        <div class="relative overflow-hidden rounded-2xl bg-gray-100 shadow-md">
+                            <img 
+                                src="https://assets.unileversolutions.com/recipes-v3/152405-default.jpg?im=AspectCrop=(720,459);Resize=(720,459)" 
+                                alt="Gado Gado Roll" 
+                                class="w-full h-64 sm:h-80 md:h-72 object-cover transform group-hover:scale-105 transition-transform duration-500"
+                                onerror="this.onerror=null; this.src='https://placehold.co/600x600/dcfce7/15803d?text=Gado+Gado+Roll';"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="text-xs font-semibold uppercase tracking-wider text-pastelGreen-700 bg-pastelGreen-100 px-2.5 py-1 rounded-md">
+                                    100% Halal & Higienis
+                                </span>
+                            </div>
+                            
+                            <h2 class="font-display text-2xl sm:text-3xl font-bold text-brandDark mb-3">
+                                Gado Gado Roll
+                            </h2>
+                            
+                            <p class="text-gray-600 text-sm sm:text-base mb-6 leading-relaxed">
+                                Sayuran segar dipadu dengan olahan khas, dibungkus rapi untuk kemudahan Anda menyantap kuliner sehat favorit. Dilengkapi dengan siraman bumbu kacang gurih melimpah!
+                            </p>
+
+                            <!-- Features list -->
+                            <ul class="space-y-2 mb-6 text-xs sm:text-sm text-gray-600">
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-check text-pastelGreen-500"></i>
+                                    <span>Sayuran Segar Pilihan Setiap Hari</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-check text-pastelGreen-500"></i>
+                                    <span>Bumbu Kacang Resep Rahasia & Gurih</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-check text-pastelGreen-500"></i>
+                                    <span>Praktis Langsung Makan Tanpa Belepotan</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Price & Order Area -->
+                        <div class="pt-4 border-t border-gray-100">
+                            <div class="flex items-baseline gap-2 mb-4">
+                                <span class="text-gray-500 text-sm font-medium">Harga:</span>
+                                <span class="font-display text-3xl font-extrabold text-pastelGreen-700">Rp 10.000</span>
+                                <span class="text-xs text-gray-400">/ porsi</span>
+                            </div>
+
+                            <!-- WhatsApp Button -->
+                            <a 
+                                href="https://wa.me/qr/SARAAJEXIXJ3F1" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                class="w-full flex items-center justify-center gap-3 bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg shadow-emerald-500/30 transform hover:-translate-y-0.5 active:translate-y-0 transition-all text-base sm:text-lg group">
+                                <i class="fa-brands fa-whatsapp text-2xl group-hover:scale-110 transition-transform"></i>
+                                <span>Pesan via WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advantage Section -->
+        <section class="max-w-4xl mx-auto px-6 pb-16 text-center">
+            <h3 class="font-display text-xl font-bold text-brandDark mb-8">
+                Mengapa Memilih <span class="text-pastelGreen-600">Gado Gado Roll</span> Kami?
+            </h3>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div class="bg-white/80 p-5 rounded-2xl border border-pastelGreen-100 shadow-sm">
+                    <div class="w-12 h-12 bg-pastelYellow-100 rounded-full flex items-center justify-center text-amber-600 mx-auto mb-3 text-xl">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h4 class="font-bold text-brandDark mb-1">Bahan Segar</h4>
+                    <p class="text-xs text-gray-500">Menggunakan bahan-bahan alami segar setiap hari demi menjaga mutu makanan.</p>
+                </div>
+
+                <div class="bg-white/80 p-5 rounded-2xl border border-pastelGreen-100 shadow-sm">
+                    <div class="w-12 h-12 bg-pastelGreen-100 rounded-full flex items-center justify-center text-pastelGreen-600 mx-auto mb-3 text-xl">
+                        <i class="fa-solid fa-box-tissue"></i>
+                    </div>
+                    <h4 class="font-bold text-brandDark mb-1">Kemasan Higienis</h4>
+                    <p class="text-xs text-gray-500">Dikemas rapi dan higienis sehingga aman dan siap disantap kapan saja.</p>
+                </div>
+
+                <div class="bg-white/80 p-5 rounded-2xl border border-pastelGreen-100 shadow-sm">
+                    <div class="w-12 h-12 bg-pastelYellow-100 rounded-full flex items-center justify-center text-amber-600 mx-auto mb-3 text-xl">
+                        <i class="fa-solid fa-wallet"></i>
+                    </div>
+                    <h4 class="font-bold text-brandDark mb-1">Harga Terjangkau</h4>
+                    <p class="text-xs text-gray-500">Cukup Rp 10.000 saja Anda sudah bisa menikmati porsi lezat & mengenyangkan.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating WhatsApp Button for Mobile -->
+    <div class="sm:hidden fixed bottom-5 right-5 z-50">
+        <a href="https://wa.me/qr/SARAAJEXIXJ3F1" target="_blank" rel="noopener noreferrer" aria-label="Chat via WhatsApp" 
+           class="w-14 h-14 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full flex items-center justify-center shadow-2xl shadow-emerald-600/50 text-2xl transform active:scale-95 transition-all">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white/80 border-t border-pastelGreen-100 py-6 px-6 text-center text-xs text-gray-500">
+        <div class="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-3">
+            <div class="flex items-center gap-2">
+                <span class="font-bold text-pastelGreen-700">Gado Gado Roll</span>
+                <span>— Lezat, Sehat, & Praktis</span>
+            </div>
+            <p>&copy; 2026 Gado Gado Roll. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth feedback script for button clicks
+        document.querySelectorAll('a[href*="wa.me"]').forEach(button => {
+            button.addEventListener('click', function () {
+                console.log('Pesanan diinisiasi via WhatsApp link');
+            });
+        });
+    </script>
+</body>
+</html>
